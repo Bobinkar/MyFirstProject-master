@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<h1>Статьи</h1>
+{% for article in articles %}
+    <h4><a href="{% url 'article' article.id %}"> {{ article.title }} </a></h4>
+        <pre style="white-space: pre-wrap; word-wrap: break-word;">{{ article.get_short_text }}</pre>
+
+{% endfor %}
+
+{% endblock %}

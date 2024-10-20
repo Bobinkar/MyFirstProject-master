@@ -1,0 +1,106 @@
+/* Общие стили */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #000000;
+    padding-top: 70px; /* Чтобы контент не перекрывался шапкой */
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: #000000 !important; /* Цвет шапки (черный) */
+    border-color: #000000 !important; /* Убедитесь, что рамка тоже черная */
+}
+
+.navbar-brand {
+    color: #ecf0f1 !important; /* Цвет логотипа */
+    font-weight: bold;
+}
+
+.navbar-nav > li > a {
+    color: #ecf0f1 !important; /* Цвет текста */
+    font-weight: bold;
+}
+
+.navbar-nav > li.active > a {
+    background-color: #2980b9 !important; /* Цвет активной ссылки */
+    color: white !important;
+}
+
+/* Эффекты при наведении на ссылки */
+.navbar-nav > li > a:hover {
+    background-color: #1abc9c !important; /* Зелёный фон при наведении */
+    color: #fff !important; /* Белый цвет текста при наведении */
+}
+
+/* Стили для основного контента */
+.main-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Заголовки статей */
+h1, h2, h3 {
+    color: #34495e;
+    font-weight: 700;
+}
+
+/* Стили для формы авторизации */
+.shadow-lg {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+    color: #2980b9 !important;
+}
+
+/* Стили для кнопок */
+.btn {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Стили для ссылок */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1abc9c; /* Зелёный цвет при наведении */
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+/* Стили для футера (если он будет) */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+}
